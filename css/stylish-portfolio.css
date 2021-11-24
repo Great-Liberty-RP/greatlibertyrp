@@ -353,3 +353,8 @@ nav ul li ul a:hover:after {
 .sidebar-brand {
   color: #03bcf4;
 }
+
+.text-center h2 {
+  color: white;
+  text-shadow:2px 2px rgb(0, 174, 255);
+}
