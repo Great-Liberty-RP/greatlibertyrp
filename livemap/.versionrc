@@ -1,0 +1,54 @@
+{
+    "header": "# Changelog\n",
+    "infile": "docs/CHANGELOG.md",
+    "releaseCommitMessageFormat": "chore(release): v{{currentTag}}",
+    "scripts": {
+        "prerelease": "yarn gulp",
+        "precommit": "git add -A dist/ style/src/"
+    },
+    "bumpFiles": [
+        {
+            "filename": "version.json",
+            "updater": "tools/standard-version-bump.js"
+        },
+        {
+            "filename": "package.json",
+            "type": "json"
+        }
+    ],
+    "commitAll": true,
+    "types": [
+        {
+            "type": "translation",
+            "section": "Translations",
+            "hidden": false
+        },
+        {
+            "type": "chore",
+            "hidden": false
+        },
+        {
+            "type": "docs",
+            "section": "Documentation",
+            "hidden": false
+        },
+        {
+            "type": "style",
+            "hidden": false
+        },
+        {
+            "type": "refactor",
+            "hidden": false
+        },
+        {
+            "type": "perf",
+            "section": "Performance",
+            "hidden": false
+        },
+        {
+            "type": "test",
+            "section": "Tests",
+            "hidden": false
+        }
+    ]
+}
