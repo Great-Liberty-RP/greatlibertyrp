@@ -20,6 +20,20 @@ body {
   font-weight: 700;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: gray;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: #07b7f8;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  outline: 1px solid;
+}
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -150,7 +164,7 @@ body {
 /* Services */
 
 .services {
-  background: rg(27, 27, 27);
+  background: rgb(27, 27, 27);
   padding: 50px 0;
   color: #ffffff;
 }
